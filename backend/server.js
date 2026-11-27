@@ -110,6 +110,17 @@ app.post('/find-student', async (req, res) => {
     }
 });
 
+// List all students (used to pick existing students when creating enrollments)
+app.get('/api/students', async (req, res) => {
+    try {
+        const students = await Student.find().sort({ name: 1 });
+        res.send(students);
+    } catch (error) {
+        console.error('Error listing students:', error);
+        res.status(500).send({ error: 'Internal server error' });
+    }
+});
+
 // Save a student
 app.post('/add-student', async (req, res) => {
     try {

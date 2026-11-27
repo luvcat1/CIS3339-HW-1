@@ -1,10 +1,10 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
-import DataTable from '../components/DataTable.vue'
-import AlertMessage from '../components/AlertMessage.vue'
-import SearchBar from '../components/SearchBar.vue'
-import StudentForm from '../components/StudentForm.vue'
-import { useStudentsStore } from '../stores/students'
+import DataTable from './DataTable.vue'
+import AlertMessage from './AlertMessage.vue'
+import SearchBar from './SearchBar.vue'
+import StudentForm from './StudentForm.vue'
+import { useStudentsStore } from './stores/students'
 
 const store = useStudentsStore()
 const message = ref(null)

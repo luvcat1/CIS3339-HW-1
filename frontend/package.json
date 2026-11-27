@@ -1,0 +1,1 @@
+{"name":"student-enrollment-frontend","private":true,"version":"1.0.0","type":"module","scripts":{"build":"vite build"},"dependencies":{"vue":"^3.5.0","vue-router":"^4.5.0","pinia":"^3.0.0"},"devDependencies":{"vite":"^6.0.0","@vitejs/plugin-vue":"^5.2.0"}}

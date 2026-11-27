@@ -1,10 +1,10 @@
 <script setup>
 import { computed, onMounted, ref, watch } from 'vue'
-import DataTable from '../components/DataTable.vue'
-import AlertMessage from '../components/AlertMessage.vue'
-import BaseSelect from '../components/BaseSelect.vue'
-import { useCoursesStore } from '../stores/courses'
-import { useEnrollmentsStore } from '../stores/enrollments'
+import DataTable from './DataTable.vue'
+import AlertMessage from './AlertMessage.vue'
+import BaseSelect from './BaseSelect.vue'
+import { useCoursesStore } from './stores/courses'
+import { useEnrollmentsStore } from './stores/enrollments'
 
 const coursesStore = useCoursesStore()
 const enrollmentsStore = useEnrollmentsStore()

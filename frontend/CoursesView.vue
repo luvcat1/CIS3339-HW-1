@@ -1,9 +1,9 @@
 <script setup>
 import { onMounted, ref } from 'vue'
-import DataTable from '../components/DataTable.vue'
-import AlertMessage from '../components/AlertMessage.vue'
-import CourseForm from '../components/CourseForm.vue'
-import { useCoursesStore } from '../stores/courses'
+import DataTable from './DataTable.vue'
+import AlertMessage from './AlertMessage.vue'
+import CourseForm from './CourseForm.vue'
+import { useCoursesStore } from './stores/courses'
 
 const store = useCoursesStore()
 const message = ref(null)

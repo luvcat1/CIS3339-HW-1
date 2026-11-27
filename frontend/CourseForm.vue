@@ -1,9 +1,9 @@
 <script setup>
 import { ref } from 'vue'
 import BaseInput from './BaseInput.vue'
-import { useCoursesStore } from '../stores/courses'
-import { useFormValidation } from '../composables/useFormValidation'
-import { courseRules } from '../utils/validators'
+import { useCoursesStore } from './stores/courses'
+import { useFormValidation } from './composables/useFormValidation'
+import { courseRules } from './validators'
 
 const emit = defineEmits(['added', 'error'])
 const store = useCoursesStore()

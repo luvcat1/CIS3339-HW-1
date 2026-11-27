@@ -1,5 +1,25 @@
 # CIS 3339 Homework 1: Vue 3 and MongoDB Migration
 
+## Running this implementation
+
+Install Node.js and MongoDB Community Edition. On macOS with Homebrew, install MongoDB with `brew tap mongodb/brew` followed by `brew install mongodb-community`, then start it with `brew services start mongodb-community`. On other platforms, start the local MongoDB Community server using its normal service command.
+
+The included `backend/.env` sets `MONGODB_URI=mongodb://127.0.0.1:27017/cis3339_homework1` and `PORT=3000`. No database setup or seed is needed.
+
+From the repository root, install, build, and start:
+
+```sh
+cd backend
+npm install
+cd ../frontend
+npm install
+npm run build
+cd ../backend
+npm start
+```
+
+Open http://localhost:3000. Rebuild the frontend after changing its source files. The server serves the production build and handles client-side routes.
+
 ## Assignment Overview
 
 In this assignment, you will migrate the provided Student Management System into a modern full-stack enterprise application.
@@ -322,4 +342,3 @@ Your work will be evaluated for:
 - code organization and maintainability;
 - required interface quality and accessibility; and
 - clear documentation and user experience.
-

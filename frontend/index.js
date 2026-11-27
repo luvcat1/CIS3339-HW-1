@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import StudentsView from '../views/StudentsView.vue'
-import CoursesView from '../views/CoursesView.vue'
-import EnrollmentsView from '../views/EnrollmentsView.vue'
-import RosterView from '../views/RosterView.vue'
+import StudentsView from './StudentsView.vue'
+import CoursesView from './CoursesView.vue'
+import EnrollmentsView from './EnrollmentsView.vue'
+import RosterView from './RosterView.vue'
 
 export default createRouter({
   history: createWebHistory(),

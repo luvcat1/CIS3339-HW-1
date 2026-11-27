@@ -1,9 +1,9 @@
 <script setup>
 import { onMounted, ref } from 'vue'
-import AlertMessage from '../components/AlertMessage.vue'
-import EnrollmentForm from '../components/EnrollmentForm.vue'
-import { useStudentsStore } from '../stores/students'
-import { useCoursesStore } from '../stores/courses'
+import AlertMessage from './AlertMessage.vue'
+import EnrollmentForm from './EnrollmentForm.vue'
+import { useStudentsStore } from './stores/students'
+import { useCoursesStore } from './stores/courses'
 
 const studentsStore = useStudentsStore()
 const coursesStore = useCoursesStore()
